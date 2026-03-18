@@ -26,7 +26,6 @@
   </div>
 </div>
 
-<!-- POPUP -->
 <div class="modal" id="modal">
   <div class="modal-content">
     <h3 id="eventTitle"></h3>
@@ -35,11 +34,20 @@
   </div>
 </div>
 
-<!-- 🔔 SOUND -->
-<audio id="tingSound" src="https://assets.mixkit.co/active_storage/sfx/2571/2571-preview.mp3"></audio>
+<!-- FIREBASE -->
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+import { getDatabase, ref, set, onValue, update } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
 
-<!-- SCRIPT -->
-<script type="module" src="script.js"></script>
+const firebaseConfig = {
+  apiKey: "AIzaSyCjmjvMxFB8eDRYmyvSldsiBNJBs5fBGEQ",
+  authDomain: "uler-tangga-td.firebaseapp.com",
+  databaseURL: "https://uler-tangga-td-default-rtdb.firebaseio.com",
+  projectId: "uler-tangga-td",
+  storageBucket: "uler-tangga-td.firebasestorage.app",
+  messagingSenderId: "973713138088",
+  appId: "1:973713138088:web:fefaee5ba83d9069833d9d",
+  measurementId: "G-5MYNCHJHW9"
+};
 
-</body>
-</html>
+const a
